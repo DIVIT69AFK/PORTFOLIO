@@ -1,102 +1,218 @@
-
-
-
-
 body {
-    background-color: #f4f4f4;
-    color: #222;
+    background: linear-gradient(180deg, #f3f7fb 0%, #eef4fb 100%);
+    color: #1f2a37;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
     background-color: #dceeff;
-    padding: 20px;
+    padding: 28px 20px 24px;
     text-align: center;
+    border-bottom: 2px solid #bfd9f3;
 }
 
 h1 {
     color: #17365d;
-    font-size: 32px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #2d4464;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
 }
 
 nav a {
     color: #17365d;
-    margin: 0 8px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgba(23, 54, 93, 0.08);
 }
 
 main {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
+    width: min(90%, 900px);
+    margin: 24px auto;
 }
 
 section {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #dfeaf4;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(18, 38, 58, 0.05);
     box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 24px;
+    padding: 24px;
 }
 
 h2 {
     color: #24527a;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+figure {
+    margin: 0 0 18px;
+}
+
+img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #dfeaf4;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #4d5d6d;
+    font-style: italic;
+}
+
+p a {
+    color: #24527a;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+li + li {
+    margin-top: 8px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.skill-card,
+.box {
+    background-color: #f7f9fc;
+    border: 1px solid #dfeaf4;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #17365d;
+}
+
+.skill-card p,
+.box p {
+    margin-bottom: 0;
+}
+
+#interactive {
+    display: grid;
+    gap: 16px;
+}
+
+.box {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #17365d;
+    font-weight: 600;
 }
 
 input,
 textarea {
     display: block;
     width: 100%;
-    padding: 8px;
-    margin: 6px 0 12px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 0 0 14px;
+    border: 1px solid #c7d6e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font: inherit;
+    color: #1f2a37;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 input:focus,
 textarea:focus {
     outline: 2px solid #8bbce8;
+    border-color: #8bbce8;
 }
 
 button {
     background-color: #24527a;
     color: white;
-    padding: 9px 14px;
+    padding: 10px 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-button:hover {
-    
-    outline: 10px solid #24527a;
+button:hover,
+button:focus {
+    background-color: #17365d;
+    transform: translateY(-1px);
+}
+
+#form-feedback,
+#personal-greeting {
+    min-height: 24px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #17365d;
 }
 
 footer {
     background-color: #dceeff;
-    padding: 12px;
+    padding: 18px 12px;
     text-align: center;
+    color: #17365d;
+    border-top: 2px solid #bfd9f3;
 }
 
 @media (max-width: 600px) {
-    h1 {
-        font-size: 26px;
+    main {
+        width: 92%;
     }
 
     section {
-        padding: 15px;
+        padding: 18px;
+    }
+
+    nav {
+        gap: 8px;
     }
 
     nav a {
         display: inline-block;
-        margin: 5px;
     }
 }
-style.css
-Displaying ghost.jpg.

@@ -1,6 +1,5 @@
-
-const greeting = document.querySelector("#greeting");
-const greetButton = document.querySelector("#greet-button");
+const greeting = document.querySelector("#greeting-text");
+const greetButton = document.querySelector("#greet-btn");
 
 function sayHello() {
     greeting.textContent = "Hello! I'm Divit.";
@@ -8,9 +7,9 @@ function sayHello() {
 
 greetButton.addEventListener("click", sayHello);
 
-const nameInput = document.querySelector("#name-input");
-const welcomeButton = document.querySelector("#welcome-button");
-const welcomeMessage = document.querySelector("#welcome-message");
+const nameInput = document.querySelector("#visitor-name");
+const welcomeButton = document.querySelector("#name-btn");
+const welcomeMessage = document.querySelector("#personal-greeting");
 
 function greetVisitor() {
     const visitorName = nameInput.value.trim();
@@ -25,9 +24,9 @@ function greetVisitor() {
 welcomeButton.addEventListener("click", greetVisitor);
 
 const contactForm = document.querySelector("#contact-form");
-const formMessage = document.querySelector("#form-message");
+const formMessage = document.querySelector("#form-feedback");
 
-contactForm.addEventListener("submit", function(event) {
+contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     formMessage.textContent = "Thanks for your message!";
 });
