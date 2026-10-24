@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Divit's Portfolio</title>
-    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -62,15 +62,15 @@
             <h2>Interactive Section</h2>
             
             <div class="box">
-                <p id="greeting-text">Welcome to my portfolio website!</p>
-                <button id="greet-btn">Click to Change Greeting</button>
+                <p id="greeting">Welcome to my portfolio website!</p>
+                <button id="greet-button">Click to Change Greeting</button>
             </div>
 
             <div class="box">
-                <label for="visitor-name">Enter your name:</label>
-                <input type="text" id="visitor-name" placeholder="Type your name here">
-                <button id="name-btn">Submit Name</button>
-                <p id="personal-greeting"></p>
+                <label for="name-input">Enter your name:</label>
+                <input type="text" id="name-input" placeholder="Type your name here">
+                <button id="welcome-button">Submit Name</button>
+                <p id="welcome-message"></p>
             </div>
         </section>
 
@@ -88,7 +88,7 @@
 
                 <button type="submit">Send Message</button>
             </form>
-            <p id="form-feedback"></p>
+            <p id="form-message"></p>
         </section>
     </main>
 
@@ -96,7 +96,6 @@
         <p>Made by Divit</p>
     </footer>
 
-    <script src="practice.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
